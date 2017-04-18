@@ -300,6 +300,7 @@ var AmpacheResolver = Tomahawk.extend(Tomahawk.Resolver, {
         params.action = action;
 
         var options = {
+            needCookieHeader: true,
             url: serverUrl.replace(/\/$/, "") + "/server/xml.server.php",
             data: params
         };
